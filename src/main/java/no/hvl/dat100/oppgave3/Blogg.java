@@ -47,19 +47,19 @@ public class Blogg {
 	}
 
 	public boolean ledigPlass() {
-        return nesteledig < innleggtabell.length;
+		return nesteledig < innleggtabell.length;
 	}
 	
 	public boolean leggTil(Innlegg innlegg) {
 		boolean lagtTil = false;
-        if (ledigPlass()) {
-            innleggtabell[nesteledig] = innlegg;
-            nesteledig++;
-            lagtTil = true;
-        } else {
-            lagtTil = false;
-        }
-        return lagtTil;
+		if (ledigPlass()) {
+			innleggtabell[nesteledig] = innlegg;
+			nesteledig++;
+			lagtTil = true;
+		} else {
+			lagtTil = false;
+		}
+	return lagtTil;
 	}
 	
 	public String toString() {
