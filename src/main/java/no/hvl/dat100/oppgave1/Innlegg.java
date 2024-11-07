@@ -47,7 +47,6 @@ public abstract class Innlegg {
 		return id;
 	}
 
-
 	public int getLikes() {
 		return likes;
 	}

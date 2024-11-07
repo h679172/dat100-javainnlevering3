@@ -1,11 +1,8 @@
 package no.hvl.dat100.oppgave6;
 
-import no.hvl.dat100.common.TODO;
-import no.hvl.dat100.oppgave1.Innlegg;
 import no.hvl.dat100.oppgave3.Blogg;
 
 public class HtmlBlogg extends Blogg {
-
 	public HtmlBlogg() {
 		super();
 	}
@@ -19,9 +16,8 @@ public class HtmlBlogg extends Blogg {
 	@Override
 	public String toString() {
 		String html = HTMLPREFIX;
-		html += "\t\t<h1>Blogg</h1>\n";
-		for (Innlegg innlegg : this.getSamling()) {
-			html += innlegg.toHTML();
+		for (int i = 0; i < getAntall(); i++) {
+			html += getSamling()[i].toHTML();
 		}
 		html += HTMLPOSTFIX;
 		return html;

@@ -73,8 +73,8 @@ public class Bilde extends Tekst {
 
 	// Metoden nedenfor er kun for valgfri oppgave 6
 	public String toHTML() {
-		
-		throw new UnsupportedOperationException(TODO.method());
-				
+		String str = "<h2>" + bruker + "@" + dato + " [" + likes + "]</h2>\n" + "<p>" + tekst + "</p>\n" + "<img src=\""
+				+ url + "\" alt=\"Bilde\" width=\"500\">\n";
+		return str;
 	}
 }
