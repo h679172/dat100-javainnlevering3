@@ -15,14 +15,12 @@ public class Tekst extends Innlegg {
 	public Tekst () {
 		
 	}
-	
 	public Tekst(int id, String bruker, String dato, String tekst) {
 		this.id = id;
 		this.bruker = bruker;
 		this.dato = dato;
 		this.tekst = tekst;
 	}
-	
 	public Tekst(int id, String bruker, String dato, int likes, String tekst) {
 		this.id = id;
 		this.bruker = bruker;
@@ -30,6 +28,7 @@ public class Tekst extends Innlegg {
 		this.likes = likes;
 		this.tekst = tekst;
 	}
+	
 	// Setters and getters
 	public String getTekst() {
 		return tekst;

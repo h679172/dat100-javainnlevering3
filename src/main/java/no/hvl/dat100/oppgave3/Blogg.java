@@ -13,7 +13,6 @@ public class Blogg {
 		innleggtabell = new Innlegg[20];
 		nesteledig = 0;
 	}
-
 	public Blogg(int lengde) {
 		innleggtabell = new Innlegg[lengde];
 		nesteledig = 0;
@@ -21,11 +20,9 @@ public class Blogg {
 	public int getAntall() {
 		return nesteledig;
 	}
-	
 	public Innlegg[] getSamling() {
 		return innleggtabell;
 	}
-	
 	public int finnInnlegg(Innlegg innlegg) {
 		int index = -1;
         for (int i = 0; i < nesteledig; i++) {
@@ -35,7 +32,6 @@ public class Blogg {
         }
         return index;
 	}
-
 	public boolean finnes(Innlegg innlegg) {
 		boolean finnes = false;
 		if (finnInnlegg(innlegg) >= 0) {
@@ -61,7 +57,6 @@ public class Blogg {
 		}
 	return lagtTil;
 	}
-	
 	public String toString() {
 		String ut = nesteledig + "\n";
 		for (int i = 0; i < nesteledig; i++) {
@@ -71,7 +66,6 @@ public class Blogg {
 	}
 
 	// valgfrie oppgaver nedenfor
-	
 	public void utvid() {
 		Innlegg[] nyTabell = new Innlegg[innleggtabell.length * 2];
 		for (int i = 0; i < innleggtabell.length; i++) {
@@ -79,7 +73,6 @@ public class Blogg {
 		}
 		innleggtabell = nyTabell;
 	}
-	
 	public boolean leggTilUtvid(Innlegg innlegg) {
 		boolean lagtTil = false;
 		if (!ledigPlass()) {
@@ -92,7 +85,6 @@ public class Blogg {
 		}
 		return lagtTil;
 	}
-	
 	public boolean slett(Innlegg innlegg) {
 		boolean slettet = false;
 		int index = finnInnlegg(innlegg);
@@ -106,7 +98,6 @@ public class Blogg {
 		}
 		return slettet;
 	}
-	
 	public int[] search(String keyword) {
 		int[] idTabell = new int[innleggtabell.length];
         int j = 0;

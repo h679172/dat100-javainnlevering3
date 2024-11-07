@@ -19,7 +19,6 @@ public class Bilde extends Tekst {
 		this.tekst = tekst;
 		this.url = url;
 	}
-
 	public Bilde(int id, String bruker, String dato, int likes, String tekst, String url) {
 		this.id = id;
 		this.bruker = bruker;
@@ -28,6 +27,7 @@ public class Bilde extends Tekst {
 		this.tekst = tekst;
 		this.url = url;
 	}
+	
 	// Setters and getters
 	public String getUrl() {
 		return url;

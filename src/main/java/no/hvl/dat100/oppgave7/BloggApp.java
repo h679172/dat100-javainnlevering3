@@ -37,7 +37,6 @@ public class BloggApp {
 	}
 
 	public void process() {
-
 		try {
 			System.out.println("SERVER ACCEPTING");
 			Socket connectionSocket = welcomeSocket.accept();
